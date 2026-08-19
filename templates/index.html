@@ -1,25 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi portafolio</title>
-    <link rel="stylesheet" href="static/css/style.css">
-    <script src="static/app.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Job Arjel - Estudiante de Ingeniería Informática en Duoc UC con mención en Ciencia de Datos. Desarrollo, automatización y soporte técnico.">
+  <title>Jobinni | Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/styles.css?v=6">
 </head>
-
 <body>
-    <header>
-        <a>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Home</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </a>
-    </header>
+
+  <!-- Encabezado y Navegación -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#inicio" class="brand">Jobinni</a>
+        
+        <input type="checkbox" id="menu-toggle-check" class="menu-toggle-checkbox" aria-label="Abrir menú de navegación">
+        <label for="menu-toggle-check" class="menu-toggle" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <ul class="nav-menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre Mí</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección Hero / Inicio -->
+    <section id="inicio" class="hero reveal">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Hola, soy <span>Job Arjel</span></h1>
+          <p>
+            Tambien llamado "Jobinni" (a veces). Soy Estudiante de Ingeniería Informática en Duoc UC con enfoque y mención en Ciencia de Datos. Me apasiona el diseño, la automatización de procesos y la optimización de código, complementado con experiencia práctica en soporte técnico de hardware y software.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#experiencia" class="btn btn-primary">Ver experiencia</a>
+            <a href="#contacto" class="btn btn-secondary">Contáctame</a>
+          </div>
+    </section>
+    <!-- Sección Sobre Mí y Habilidades -->
+    <section id="sobre-mi" class="about reveal">
+      <div class="container">
+        <div class="section-title">
+          <h2>Sobre Mí</h2>
+          <p>Conoce mi perfil académico, enfoque técnico y las herramientas que domino.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Perfil &amp; Intereses</h3>
+            <p>
+              Tengo 20 años, nací en Valparaíso y vivo en Calbuco. Soy estudiante de Ingeniería Informática con enfoque en Ciencia de Datos. Me considero una persona introvertida, curiosa y con una gran pasión por aprender cosas nuevas, destacando por mi capacidad de aprendizaje rápido y adaptabilidad.
+            </p>
+            <p>
+              Cuento con dominio del idioma inglés y nociones básicas de alemán, facilitándome el acceso a documentación y tecnología de vanguardia.
+            </p>
+            <p>
+              En mis intereses personales, disfruto mucho del anime —con especial fascinación por los géneros de mechas y romance—, además de tener un gran gusto por la música, destacando géneros como el rock, el house y el funky jazz.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3>Habilidades Técnicas</h3>
+            <p>Conocimientos en desarrollo, bases de datos y soporte técnico aplicados en proyectos académicos y prácticos:</p>
+            <div class="list-skills">
+              <span>Python</span>
+              <span>SQL / Bases de Datos</span>
+              <span>Ciencia de Datos</span>
+              <span>Git &amp; GitHub</span>
+              <span>HTML5 / CSS3</span>
+              <span>JavaScript</span>
+              <span>Soporte Técnico HW/SW</span>
+              <span>Automatización</span>
+              <span>IA Agentica</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Servicios / Qué puedo aportar -->
+    <section id="servicios" class="services reveal">
+      <div class="container">
+        <div class="section-title">
+          <h2>Servicios</h2>
+          <p>Áreas en las que puedo aportar valor a proyectos, equipos y soporte técnico.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">&lt;/&gt;</div>
+            <h3>Desarrollo Web &amp; Software</h3>
+            <p>Creación de interfaces web limpias, estructuradas y responsivas, complementadas con lógica de programación para soluciones funcionales.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">&Sigma;</div>
+            <h3>Análisis y Ciencia de Datos</h3>
+            <p>Procesamiento, limpieza y modelamiento de datos con Python y SQL para descubrir patrones y facilitar la toma de decisiones informadas.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">&#9881;</div>
+            <h3>Soporte Técnico &amp; Optimización</h3>
+            <p>Diagnóstico de fallas, mantenimiento preventivo de hardware y optimización de sistemas operativos para un rendimiento estable.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Experiencia / Proyectos Prácticos -->
+    <section id="experiencia" class="projects reveal">
+      <div class="container">
+        <div class="section-title">
+          <h2>Experiencia Práctica</h2>
+          <p>Actividades técnicas y trabajos prácticos en los que he participado.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-thumb">
+              <svg viewBox="0 0 350 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mantenimiento en radioemisora">
+                <rect width="350" height="200" fill="#153243" />
+                <rect x="25" y="25" width="300" height="150" rx="10" fill="#284B64" />
+                <circle cx="45" cy="45" r="4" fill="#F4F9E9" />
+                <circle cx="58" cy="45" r="4" fill="#F4F9E9" opacity="0.8" />
+                <circle cx="71" cy="45" r="4" fill="#F4F9E9" opacity="0.5" />
+                <!-- Ilustración estación de radio / PC -->
+                <rect x="50" y="70" width="110" height="75" rx="6" fill="#153243" />
+                <rect x="60" y="80" width="90" height="45" rx="3" fill="#284B64" />
+                <line x1="105" y1="145" x2="105" y2="155" stroke="#F4F9E9" stroke-width="3" />
+                <line x1="90" y1="155" x2="120" y2="155" stroke="#F4F9E9" stroke-width="3" />
+                <rect x="180" y="75" width="120" height="12" rx="3" fill="#F4F9E9" opacity="0.9" />
+                <rect x="180" y="95" width="100" height="8" rx="2" fill="#F4F9E9" opacity="0.6" />
+                <rect x="180" y="110" width="115" height="8" rx="2" fill="#F4F9E9" opacity="0.6" />
+                <rect x="180" y="130" width="70" height="16" rx="4" fill="#153243" />
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>Mantenimiento de PCs en Radio</h3>
+              <p>Descarga, configuración, mantenimiento preventivo y optimización de computadores para la continuidad operativa en una estación de radio.</p>
+              <div class="project-tags">
+                <span>Soporte TI</span>
+                <span>Mantenimiento PC</span>
+                <span>Optimización SO</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb">
+              <svg viewBox="0 0 350 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Infraestructura de redes y cableado">
+                <rect width="350" height="200" fill="#153243" />
+                <rect x="25" y="25" width="300" height="150" rx="10" fill="#284B64" />
+                <circle cx="45" cy="45" r="4" fill="#F4F9E9" />
+                <circle cx="58" cy="45" r="4" fill="#F4F9E9" opacity="0.8" />
+                <circle cx="71" cy="45" r="4" fill="#F4F9E9" opacity="0.5" />
+                <!-- Topología de red / Switch / Nodos -->
+                <rect x="50" y="70" width="100" height="30" rx="4" fill="#153243" />
+                <circle cx="65" cy="85" r="3" fill="#F4F9E9" />
+                <circle cx="77" cy="85" r="3" fill="#F4F9E9" />
+                <circle cx="89" cy="85" r="3" fill="#F4F9E9" />
+                <circle cx="101" cy="85" r="3" fill="#F4F9E9" opacity="0.5" />
+                <line x1="100" y1="100" x2="65" y2="135" stroke="#F4F9E9" stroke-width="2" />
+                <line x1="100" y1="100" x2="100" y2="135" stroke="#F4F9E9" stroke-width="2" />
+                <line x1="100" y1="100" x2="135" y2="135" stroke="#F4F9E9" stroke-width="2" />
+                <circle cx="65" cy="135" r="6" fill="#153243" stroke="#F4F9E9" stroke-width="1.5" />
+                <circle cx="100" cy="135" r="6" fill="#153243" stroke="#F4F9E9" stroke-width="1.5" />
+                <circle cx="135" cy="135" r="6" fill="#153243" stroke="#F4F9E9" stroke-width="1.5" />
+                <rect x="180" y="75" width="120" height="12" rx="3" fill="#F4F9E9" opacity="0.9" />
+                <rect x="180" y="95" width="95" height="8" rx="2" fill="#F4F9E9" opacity="0.6" />
+                <rect x="180" y="110" width="110" height="8" rx="2" fill="#F4F9E9" opacity="0.6" />
+                <rect x="180" y="130" width="85" height="16" rx="4" fill="#153243" />
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>Infraestructura de Redes &amp; Cableado</h3>
+              <p>Asistencia técnica en tendido de cableado estructurado, canalización y conexión de equipamiento de red para asegurar una conectividad sólida y organizada.</p>
+              <div class="project-tags">
+                <span>Cableado Estructurado</span>
+                <span>Redes LAN</span>
+                <span>Infraestructura TI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb">
+              <svg viewBox="0 0 350 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Soporte técnico particular">
+                <rect width="350" height="200" fill="#153243" />
+                <rect x="25" y="25" width="300" height="150" rx="10" fill="#284B64" />
+                <circle cx="45" cy="45" r="4" fill="#F4F9E9" />
+                <circle cx="58" cy="45" r="4" fill="#F4F9E9" opacity="0.8" />
+                <circle cx="71" cy="45" r="4" fill="#F4F9E9" opacity="0.5" />
+                <!-- Ilustración herramientas y reparación -->
+                <circle cx="100" cy="110" r="30" fill="#153243" />
+                <path d="M88 98 L112 122 M112 98 L88 122" stroke="#F4F9E9" stroke-width="3" stroke-linecap="round" />
+                <rect x="180" y="75" width="120" height="12" rx="3" fill="#F4F9E9" opacity="0.9" />
+                <rect x="180" y="95" width="100" height="8" rx="2" fill="#F4F9E9" opacity="0.6" />
+                <rect x="180" y="110" width="85" height="8" rx="2" fill="#F4F9E9" opacity="0.6" />
+                <rect x="180" y="130" width="75" height="16" rx="4" fill="#153243" />
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>Soporte &amp; Reparación de Computadores</h3>
+              <p>Diagnóstico de fallas, limpieza de componentes, cambio de piezas, formateo y resolución de problemas de software en equipos personales.</p>
+              <div class="project-tags">
+                <span>Diagnóstico PC</span>
+                <span>Formateo &amp; SO</span>
+                <span>Reparación</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact reveal">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contacto</h2>
+          <p>¿Te gustaría ponerte en contacto conmigo? Escríbeme o visita mis perfiles.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div>
+              <h3>Correo Electrónico</h3>
+              <p>Escríbeme directamente a mi casilla para consultas o propuestas:</p>
+            </div>
+            <a href="mailto:jobarjel14@gmail.com" class="contact-link">jobarjel14@gmail.com &rarr;</a>
+          </div>
+
+          <div class="contact-card">
+            <div>
+              <h3>GitHub</h3>
+              <p>Revisa mis repositorios, ejercicios de código y proyectos en desarrollo:</p>
+            </div>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/Jobinni &rarr;</a>
+          </div>
+
+          <div class="contact-card">
+            <div>
+              <h3>LinkedIn</h3>
+              <p>Conectemos en mi perfil profesional para seguir en contacto:</p>
+            </div>
+            <a href="https://www.linkedin.com/in/job-arjel-779b06322/" target="_blank" rel="noopener noreferrer" class="contact-link">linkedin.com/in/job-arjel &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Job Arjel &mdash; Estudiante de Ingeniería Informática, Duoc UC.</p>
+    </div>
+  </footer>
+
+  <!-- Botón Volver al Inicio -->
+  <a href="#inicio" id="back-to-top" class="back-to-top" aria-label="Volver al inicio" title="Volver al inicio">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </a>
 </body>
 </html>
